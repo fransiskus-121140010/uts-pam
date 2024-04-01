@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_below="@id/et_name"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_username"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_github_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username Github"
+        android:inputType="text"
+        android:layout_below="@id/et_password"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIK"
+        android:inputType="number"
+        android:layout_below="@id/et_github_username"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/et_nik"
+        android:layout_margin="16dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_email"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
